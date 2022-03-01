@@ -27,8 +27,13 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Deploy on Netlify
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Project Structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The project has 4 main folders
+
+- `articles`: This is where the articles that are rendered under the `/blog/[slug]` are created. These articles are created using [Markdown](https://www.markdownguide.org/). The slug is given by the name of the file. Each article will also be rendered as a card under the `/blog` page.
+- `pages`: This is where all the pages that NextJS will rendered are created. Refer to [NextJS Pages](https://nextjs.org/docs/basic-features/pages) for more information.
+- `public`: This is where all the static files (e.g. images) that will be publicly served are stored. Refer to [NextJS Static File Serving](https://nextjs.org/docs/basic-features/static-file-serving) for more information
+- `src`: Under the `src` folder there are 2 main folders. The `components` folder in which components are created, and the `theme` folder in which all theme related aspects of the site are created.
