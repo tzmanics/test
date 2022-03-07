@@ -33,8 +33,8 @@ export default function HomePage() {
     <Layout title="Home - Starter">
       <Hero {...hero} />
       <Collection
-        title="It has never been more critical to have a robust digital presence"
-        body={`At Last Rev, we strive not just to be a development shop for our clients but to partner with your team to provide guidance and support as you take the next step to building the technology end of your business. We've been building enterprise SaaS solutions alongside engineering, marketing, and operations teams for over 15 years, and work hard to create scalable, easy-to-use solutions to meet your business goals.`}
+        title="NextJS, Material UI Themes, Netlify Starter"
+        body={`Component based design is at the core of any JAMstack website. This template will show you examples of how you can build new pages, based of a set of standard and customized components. It also shows the power of Material UI Themes which allow you to style many components with CSS alone, shortening development time without loosing design flexability.`}
         sx={{ my: 16 }}
       >
         <Grid
@@ -45,41 +45,31 @@ export default function HomePage() {
         >
           <Grid item>
             <Card
-              title="Web and Application Development"
+              title="Netlify"
               variant="feature"
               media={{
                 title: "Card Feature",
-                src: "/images/browser.svg",
+                src: "/images/netlify.png",
               }}
             />
           </Grid>
           <Grid item>
             <Card
-              title="Web and Application Development"
+              title="NextJS"
               variant="feature"
               media={{
-                title: "Card Feature",
-                src: "/images/browser.svg",
+                title: "NextJS",
+                src: "/images/nextjs.png",
               }}
             />
           </Grid>
           <Grid item>
             <Card
-              title="Web and Application Development"
+              title="Material UI"
               variant="feature"
               media={{
-                title: "Card Feature",
-                src: "/images/browser.svg",
-              }}
-            />
-          </Grid>
-          <Grid item>
-            <Card
-              title="Web and Application Development"
-              variant="feature"
-              media={{
-                title: "Card Feature",
-                src: "/images/browser.svg",
+                title: "Material UI",
+                src: "/images/mui.png",
               }}
             />
           </Grid>
@@ -105,7 +95,7 @@ export default function HomePage() {
           sx={{ mt: 2 }}
         />
       </Collection>
-      <Collection title="Build tools and full documentation" sx={{ my: 16 }}>
+      <Collection title="Template Features" sx={{ my: 16 }}>
         <Grid
           container
           spacing={2}
@@ -114,12 +104,12 @@ export default function HomePage() {
         >
           <Grid item xs={12}>
             <Card
-              title="Building your website through experimentationt"
-              body="Historically, experimentation was only done by companies like Amazon, Google, and Facebook. In 2017, brands from across the globe use web experimentation to increase conversions, inform website design and find out what message resonates best with their customers. Brad will talk about Optimizely’s experience migrating their major web properties over to Contentful and how they have baked experimentation into the content creation process."
+              title="Common web component examples"
+              body="This template provides you with examples of common components used when building todays modern marketing websites. Using Material UI as a baseline, you will find examples of Page Layout, Collections, Header, Footer, Forms, Hero, Slider, Pricing Table, Media, Advanced Link options. Use these components in your own project to see examples of how to extend the MUI framework to start to build your own set of custom design and functionality options"
               variant="side"
               media={{
                 title: "Card Side",
-                src: "/images/image-1.jpg",
+                src: "/images/web-components.png",
               }}
               actions={[
                 {
@@ -134,19 +124,19 @@ export default function HomePage() {
           </Grid>
           <Grid item xs={12}>
             <Card
-              title="Building your website through experimentationt"
-              body="Historically, experimentation was only done by companies like Amazon, Google, and Facebook. In 2017, brands from across the globe use web experimentation to increase conversions, inform website design and find out what message resonates best with their customers. Brad will talk about Optimizely’s experience migrating their major web properties over to Contentful and how they have baked experimentation into the content creation process."
+              title="Material UI Themes to ensure brand consistency"
+              body="The theme specifies the color of the components, darkness of the surfaces, level of shadow, appropriate opacity of ink elements, etc. Themes let you apply a consistent tone to your app. It allows you to customize all design aspects of your project in order to meet the specific needs of your business or brand."
               variant="side"
               reverse
               media={{
                 title: "Card Side",
-                src: "/images/image-1.jpg",
+                src: "/images/mui-theme.png",
               }}
               actions={[
                 {
                   id: "learn-more",
                   text: "Learn More",
-                  href: "/",
+                  href: "https://mui.com/customization/theming/",
                   variant: "button-contained",
                   color: "secondary",
                 },
@@ -155,39 +145,18 @@ export default function HomePage() {
           </Grid>
           <Grid item xs={12}>
             <Card
-              title="Building your website through experimentationt"
-              body="Historically, experimentation was only done by companies like Amazon, Google, and Facebook. In 2017, brands from across the globe use web experimentation to increase conversions, inform website design and find out what message resonates best with their customers. Brad will talk about Optimizely’s experience migrating their major web properties over to Contentful and how they have baked experimentation into the content creation process."
+              title="Built by Experts"
+              body="Last Rev specializes in building content-driven websites on the JAMStack architecture. The frameworks and starters that we actively invest in help get developers up and running quickly. We offer out-of-the-box components and integrations that scale with you as your organization grows."
               variant="side"
               media={{
                 title: "Card Side",
-                src: "/images/image-1.jpg",
+                src: "/images/lastrev.png",
               }}
               actions={[
                 {
                   id: "learn-more",
                   text: "Learn More",
-                  href: "/",
-                  variant: "button-contained",
-                  color: "secondary",
-                },
-              ]}
-            />
-          </Grid>
-          <Grid item xs={12}>
-            <Card
-              title="Building your website through experimentationt"
-              body="Historically, experimentation was only done by companies like Amazon, Google, and Facebook. In 2017, brands from across the globe use web experimentation to increase conversions, inform website design and find out what message resonates best with their customers. Brad will talk about Optimizely’s experience migrating their major web properties over to Contentful and how they have baked experimentation into the content creation process."
-              variant="side"
-              reverse
-              media={{
-                title: "Card Side",
-                src: "/images/image-1.jpg",
-              }}
-              actions={[
-                {
-                  id: "learn-more",
-                  text: "Learn More",
-                  href: "/",
+                  href: "https://www.netlify.com/experts-directory/last-rev/",
                   variant: "button-contained",
                   color: "secondary",
                 },
@@ -199,7 +168,7 @@ export default function HomePage() {
       <Container maxWidth="xl">
         <Form
           name="contact-form"
-          body="Stay up to date with all Starter news"
+          body="Manage forms and submissions without any server-side code or JavaScript with Netlify"
           submitLabel="Subscribe"
           fields={[
             {
@@ -226,7 +195,7 @@ export default function HomePage() {
         >
           <Card
             key="slide-1"
-            title="Kent Dodds"
+            title="John Doe"
             body="This is amazing"
             variant="quote"
             media={{
@@ -236,7 +205,7 @@ export default function HomePage() {
           />
           <Card
             key="slide-2"
-            title="Kent Dodds"
+            title="Jane Doe"
             body="This is amazing"
             variant="quote"
             media={{
@@ -246,7 +215,7 @@ export default function HomePage() {
           />
           <Card
             key="slide-3"
-            title="Kent Dodds"
+            title="Julie Doe"
             body="This is amazing"
             variant="quote"
             media={{
@@ -256,7 +225,7 @@ export default function HomePage() {
           />
           <Card
             key="slide-4"
-            title="Kent Dodds"
+            title="Joe Doe"
             body="This is amazing"
             variant="quote"
             media={{
